@@ -108,7 +108,7 @@ function downloadVictoryVideo() {
 
 function downloadMp3() {
     try {
-        const mp3Url = 'test/Congratulations.mp4';
+        const mp3Url = 'sounds/Congratulations.mp4';
         const link = document.createElement('a');
         link.href = mp3Url;
         link.download = 'Congratulations.mp4';
