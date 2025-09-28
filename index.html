@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Битва с Броули</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="turn-indicator">Ход босса</div>
+        
+        <div id="boss-health-container">
+            <div id="boss-name">БРОУЛИ</div>
+            <div id="boss-health-bar">
+                <div id="boss-health-fill" style="width: 100%"></div>
+            </div>
+        </div>
+        
+        <div id="player-health-container">
+            <div id="player-health-text">HP: 100/100</div>
+            <div id="player-health-bar">
+                <div id="player-health-fill" style="width: 100%"></div>
+            </div>
+        </div>
+        
+        <div id="battle-area">
+            <div id="battle-background"></div>
+            <div id="battle-border"></div>
+            <div id="battle-frame"></div>
+            
+            <div id="boss-container">
+                <div id="boss">
+                    <img id="boss-image" src="boss.png" alt="Броули">
+                </div>
+            </div>
+            <div id="player-heart"></div>
+        </div>
+        
+        <div id="battle-ui">
+            <div id="dialogue-box">
+                * Приготовься к настоящему испытанию!
+            </div>
+            <div id="options">
+                <div class="option selected" data-action="fight">Бить</div>
+                <div class="option" data-action="act">Действие</div>
+                <div class="option" data-action="item">Предмет</div>
+                <div class="option" data-action="mercy">Пощада</div>
+            </div>
+        </div>
+        
+        <div id="game-over">
+            <h1>ВЫ ПРОИГРАЛИ</h1>
+            <button id="restart-button">Начать заново</button>
+        </div>
+        
+        <div id="victory">
+            <h1>ПОБЕДА!</h1>
+            <div id="victory-content">
+                <p>Поздравляем! Вы победили Броули!</p>
+
+                <button id="download-mp3-button">Скачать Congratulations.mp4</button>
+                <button id="restart-button-victory">Начать заново</button>
+            </div>
+        </div>
+        
+        <div id="controls-info">
+            Управление: Стрелки/Мышь/Касание | Z/ENTER для выбора
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
